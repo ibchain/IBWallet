@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { Grid, Paper, Typography, withStyles } from '@material-ui/core'
-import { UserState, State } from '../../common/reducer';
-import { MyAccount } from '../../components/AddressAssetTable';
+import { UserState, State } from '../common/reducer';
+import { MyAccount } from '../components/AddressAssetTable';
 
 let QRCode = require('qrcode.react')
 

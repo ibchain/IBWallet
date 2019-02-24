@@ -6,9 +6,11 @@ import store from './common/store';
 import browserHistory from './common/history';
 import { Grid, CssBaseline } from '@material-ui/core';
 import { HashRouter } from 'react-router-dom';
-import { PageNoMatch, PagePay } from './pages';
 import { MyAppBar } from './components/AppBar';
 import { BottomAppBar } from './components/BottomAppBar';
+import { PageNoMatch } from './pages/PageNoMatch';
+import { PagePay } from './pages/PagePay';
+import { PageLogin } from './pages/PageLogin';
 
 class App extends Component {
   render() {
@@ -25,14 +27,14 @@ class App extends Component {
               <div style={{ height: '100%', paddingBottom: '60px' }}>
                 <MyAppBar />
                 <Switch>
-                  <Route path="/paper/:code?" component={PageNoMatch} />
-                  <Route path="/login" component={PageNoMatch} />
-                  <Route path="/share/:address?" render={(props: any) => <Redirect to={{ pathname: '/transfer', state: props.match.params.address }} />} />
                   <Route exact path="/" render={() => <Redirect to={{ pathname: '/pay' }} />} />
+                  <Route path="/login" component={PageLogin} />
+                  <Route path="/paper/:code?" component={PageNoMatch} />
                   <Route path="/account" component={PageNoMatch} />
                   <Route path="/pay" component={PagePay} />
                   <Route path="/claim/:code?" component={PageNoMatch} />
                   <Route path="/transfer" component={PageNoMatch} />
+                  <Route path="/share/:address?" render={(props: any) => <Redirect to={{ pathname: '/transfer', state: props.match.params.address }} />} />
                   <Route component={PageNoMatch} />
                 </Switch>
                 <BottomAppBar />
