@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { Grid, Typography, Theme, withStyles, Paper, Button, Dialog, Slide, DialogTitle, DialogContent, DialogActions, DialogContentText } from '@material-ui/core';
 import { GoogleLogout } from 'react-google-login';
 import { UserState } from '../common/reducer';
+import { AmplifyBridge } from '../common/Amplify';
+import store from '../common/store';
 
 const ReactCopyButtonWrapper = require('react-copy-button-wrapper')
 
@@ -76,7 +78,7 @@ class Page extends React.Component<MyProps, MyState> {
   }
 
   handleOnSuccessLogout = () => {
-    // new AmplifyBridge(store).logout();
+    new AmplifyBridge(store).logout();
   }
 
   openLogoutDialog = (open: boolean): void => {

@@ -56,7 +56,7 @@ class MyRoute extends React.Component<MyProps, MyStates> {
     log('componentDidMount', loggedIn, lastLoggedIn)
 
     // const { isLoggedIn } = this.props
-    if (!loggedIn) {
+    // if (!loggedIn) {
       this.timer = window.setTimeout(() => {
         const { isLoggedIn } = this.props
         if (!isLoggedIn) {
@@ -65,8 +65,8 @@ class MyRoute extends React.Component<MyProps, MyStates> {
         } else {
           log('timeout: false')
         }
-      }, 5000)
-    }
+      }, loggedIn ? 10000: 5000)
+    // }
   }
 
   componentWillUnmount() {

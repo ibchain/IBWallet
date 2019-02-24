@@ -4,6 +4,7 @@ import { IBWallet } from './IBWallet';
 import { IBPay } from './IBPay';
 import { Store } from 'redux';
 import { State } from './reducer';
+import { removeLoggedInFlag } from './localStorage';
 
 const logger = new Logger('AmplifyBridge');
 
@@ -148,6 +149,7 @@ export class AmplifyBridge {
    * @memberof AmplifyBridge
    */
   public logout = () => {
+    removeLoggedInFlag()
     Auth.signOut()
     .then(this.logoutSuccess)   // 10.1
     .catch(this.logoutError)    // 10.2
