@@ -12,6 +12,9 @@ import { PageNoMatch } from './pages/PageNoMatch';
 import { PagePay } from './pages/PagePay';
 import { PageLogin } from './pages/PageLogin';
 import { PageAccount } from './pages/PageAccount';
+import { PrivateRoute } from './pages/PrivateRoute';
+import { MyGoogleLogin } from './components/MyGoogleLogin';
+import { PageTransfer } from './pages/PageTransfer';
 
 class App extends Component {
   render() {
@@ -30,17 +33,20 @@ class App extends Component {
                 <Switch>
                   <Route exact path="/" render={() => <Redirect to={{ pathname: '/pay' }} />} />
                   <Route path="/login" component={PageLogin} />
-                  <Route path="/paper/:code?" component={PageNoMatch} />
-                  <Route path="/account" component={PageAccount} />
-                  <Route path="/pay" component={PagePay} />
+                  <PrivateRoute path="/paper/:code?" component={PageNoMatch} />
+                  <PrivateRoute path="/account" component={PageAccount} />
+                  <PrivateRoute path="/pay" component={PagePay} />
                   <Route path="/claim/:code?" component={PageNoMatch} />
-                  <Route path="/transfer" component={PageNoMatch} />
+                  <PrivateRoute path="/transfer" component={PageTransfer} />
                   <Route path="/share/:address?" render={(props: any) => <Redirect to={{ pathname: '/transfer', state: props.match.params.address }} />} />
                   <Route component={PageNoMatch} />
                 </Switch>
                 <BottomAppBar />
               </div>
             </HashRouter>
+            <div style={{ display: 'none' }}>
+              <MyGoogleLogin />
+            </div>
           </Grid>
         </Router>
       </Provider>
