@@ -1,3 +1,3 @@
 # IBWallet
 
-IB Wallet
+[IB Wallet](https://ibchain.github.io/IBWallet/)
