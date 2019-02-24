@@ -1,3 +1,0 @@
-# IBWallet
-
-IB Wallet
