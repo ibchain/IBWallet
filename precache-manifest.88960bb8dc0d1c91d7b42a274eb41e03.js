@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f00cd3b4cd68fb3dd362",
+    "revision": "5b2f28eaa7bff9a804c2",
     "url": "/IBWallet/static/css/main.fb189dce.chunk.css"
   },
   {
-    "revision": "f00cd3b4cd68fb3dd362",
-    "url": "/IBWallet/static/js/main.f00cd3b4.chunk.js"
+    "revision": "5b2f28eaa7bff9a804c2",
+    "url": "/IBWallet/static/js/main.5b2f28ea.chunk.js"
   },
   {
     "revision": "fe9673d5ae6c8c830939",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/IBWallet/static/js/2.467ffc01.chunk.js"
   },
   {
-    "revision": "b3c7e109c791d23561b7d2a0455fbe94",
+    "revision": "0e7f9f25cf2bda9290f90a330f59dc24",
     "url": "/IBWallet/index.html"
   }
 ];

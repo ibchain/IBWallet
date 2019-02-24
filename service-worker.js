@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/IBWallet/precache-manifest.6f71b206a1c5e000ae9e29ba6fea02dc.js"
+  "/IBWallet/precache-manifest.88960bb8dc0d1c91d7b42a274eb41e03.js"
 );
 
 workbox.clientsClaim();

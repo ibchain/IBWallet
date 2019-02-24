@@ -1,13 +1,13 @@
 {
   "main.css": "/IBWallet/static/css/main.fb189dce.chunk.css",
-  "main.js": "/IBWallet/static/js/main.f00cd3b4.chunk.js",
-  "main.js.map": "/IBWallet/static/js/main.f00cd3b4.chunk.js.map",
+  "main.js": "/IBWallet/static/js/main.5b2f28ea.chunk.js",
+  "main.js.map": "/IBWallet/static/js/main.5b2f28ea.chunk.js.map",
   "runtime~main.js": "/IBWallet/static/js/runtime~main.fe9673d5.js",
   "runtime~main.js.map": "/IBWallet/static/js/runtime~main.fe9673d5.js.map",
   "static/js/2.467ffc01.chunk.js": "/IBWallet/static/js/2.467ffc01.chunk.js",
   "static/js/2.467ffc01.chunk.js.map": "/IBWallet/static/js/2.467ffc01.chunk.js.map",
   "index.html": "/IBWallet/index.html",
-  "precache-manifest.6f71b206a1c5e000ae9e29ba6fea02dc.js": "/IBWallet/precache-manifest.6f71b206a1c5e000ae9e29ba6fea02dc.js",
+  "precache-manifest.88960bb8dc0d1c91d7b42a274eb41e03.js": "/IBWallet/precache-manifest.88960bb8dc0d1c91d7b42a274eb41e03.js",
   "service-worker.js": "/IBWallet/service-worker.js",
   "static/css/main.fb189dce.chunk.css.map": "/IBWallet/static/css/main.fb189dce.chunk.css.map"
 }
