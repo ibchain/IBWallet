@@ -20,6 +20,7 @@
     "history": "^4.7.2",
     "qrcode.react": "^0.9.3",
     "react": "^16.8.3",
+    "react-copy-button-wrapper": "0.0.6",
     "react-dom": "^16.8.3",
     "react-google-login": "^5.0.2",
     "react-redux": "^6.0.1",

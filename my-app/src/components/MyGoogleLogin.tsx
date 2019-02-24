@@ -4,6 +4,8 @@ import { GoogleLogin } from 'react-google-login'
 import { Auth } from 'aws-amplify';
 import { State } from '../common/reducer';
 import { googleClientId } from '../config/params';
+import { AmplifyBridge } from '../common/Amplify';
+import store from '../common/store';
 
 let debug = require('debug');
 let log = debug('MyGoogleLogin');
@@ -50,7 +52,7 @@ class BaseMyGoogleLogin extends React.Component<MyProps, {}> {
     );
     log('credentials', credentials);
     // setHaveLoggedIn()
-    // new AmplifyBridge(store).checkUser()
+    new AmplifyBridge(store).checkUser()
 }
 
   // Google ログインが失敗した時に呼び出される

@@ -11,6 +11,7 @@ import { BottomAppBar } from './components/BottomAppBar';
 import { PageNoMatch } from './pages/PageNoMatch';
 import { PagePay } from './pages/PagePay';
 import { PageLogin } from './pages/PageLogin';
+import { PageAccount } from './pages/PageAccount';
 
 class App extends Component {
   render() {
@@ -30,7 +31,7 @@ class App extends Component {
                   <Route exact path="/" render={() => <Redirect to={{ pathname: '/pay' }} />} />
                   <Route path="/login" component={PageLogin} />
                   <Route path="/paper/:code?" component={PageNoMatch} />
-                  <Route path="/account" component={PageNoMatch} />
+                  <Route path="/account" component={PageAccount} />
                   <Route path="/pay" component={PagePay} />
                   <Route path="/claim/:code?" component={PageNoMatch} />
                   <Route path="/transfer" component={PageNoMatch} />
