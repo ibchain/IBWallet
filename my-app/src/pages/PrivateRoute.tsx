@@ -86,7 +86,6 @@ class MyRoute extends React.Component<MyProps, MyStates> {
   render() {
 
     log('render', this.props)
-    // const { loggedIn } = haveLoggedIn()
     const { isLogout } = this.props
     // 過去にログイン成功していない場合はログイン画面にリダイレクトする
     // 過去にログイン成功している場合は、ログイン処理の結果を待つ
@@ -137,7 +136,6 @@ const mapState = (state: UserState, routerProps: any): MapStateProps => {
   let { user } = state
   log("mapState", user, routerProps)
   return ({
-    // login: !!mystate.address,
     isLoggedIn: user.isLoggedIn,
     isLogout: user.isLogout,
   })
