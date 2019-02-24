@@ -16,6 +16,7 @@ import { PrivateRoute } from './pages/PrivateRoute';
 import { MyGoogleLogin } from './components/MyGoogleLogin';
 import { PageTransfer } from './pages/PageTransfer';
 import { PageClaim } from './pages/PageClaim';
+import { PagePaper } from './pages/PagePaper';
 
 class App extends Component {
   render() {
@@ -34,7 +35,7 @@ class App extends Component {
                 <Switch>
                   <Route exact path="/" render={() => <Redirect to={{ pathname: '/pay' }} />} />
                   <Route path="/login" component={PageLogin} />
-                  <PrivateRoute path="/paper/:code?" component={PageNoMatch} />
+                  <Route path="/paper/:code?" component={PagePaper} />
                   <PrivateRoute path="/account" component={PageAccount} />
                   <PrivateRoute path="/pay" component={PagePay} />
                   <Route path="/claim/:code?" component={PageClaim} />

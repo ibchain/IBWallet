@@ -6,6 +6,8 @@ let debug = require('debug')
 let info = debug('IBCoupon[INFO]');
 let error = debug('IBCoupon[ERR]');
 
+export type claimPaperAsset = (code: string, qty: number) => void;
+
 /**
  * IB Coupon
  *
@@ -70,7 +72,7 @@ export class IBCoupon {
    *
    * @memberof IBCoupon
    */
-  public claimPaperAsset = (code: string, qty: number) => {
+  public claimPaperAsset: claimPaperAsset = (code: string, qty: number) => {
     API.claimPaperAsset(code, qty)
       .then(this.claimPaperAssetSuccess)  // 2.1
       .catch(this.claimPaperAssetError)   // 2.2
