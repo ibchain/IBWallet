@@ -15,6 +15,7 @@ import { PageAccount } from './pages/PageAccount';
 import { PrivateRoute } from './pages/PrivateRoute';
 import { MyGoogleLogin } from './components/MyGoogleLogin';
 import { PageTransfer } from './pages/PageTransfer';
+import { PageClaim } from './pages/PageClaim';
 
 class App extends Component {
   render() {
@@ -36,7 +37,7 @@ class App extends Component {
                   <PrivateRoute path="/paper/:code?" component={PageNoMatch} />
                   <PrivateRoute path="/account" component={PageAccount} />
                   <PrivateRoute path="/pay" component={PagePay} />
-                  <Route path="/claim/:code?" component={PageNoMatch} />
+                  <Route path="/claim/:code?" component={PageClaim} />
                   <PrivateRoute path="/transfer" component={PageTransfer} />
                   <Route path="/share/:address?" render={(props: any) => <Redirect to={{ pathname: '/transfer', state: props.match.params.address }} />} />
                   <Route component={PageNoMatch} />

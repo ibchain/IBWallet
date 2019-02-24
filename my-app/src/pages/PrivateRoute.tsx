@@ -7,7 +7,7 @@ import { UserState } from '../common/reducer';
 // import AuthService from './services/AuthService'  // ログインチェックを行うサービス.
 
 let debug = require('debug')
-let log = debug('MyRoute');
+let log = debug('[PAGE]{PRIVATE}');
 log.log = console.log.bind(console);
 
 const styles = (theme: any) => {
