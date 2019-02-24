@@ -4,7 +4,6 @@ import { Router, Switch, Route, Redirect } from 'react-router';
 
 import store from './common/store';
 import browserHistory from './common/history';
-import './App.css';
 import { Grid, CssBaseline } from '@material-ui/core';
 import { HashRouter } from 'react-router-dom';
 import { PageNoMatch } from './pages';
