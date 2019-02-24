@@ -1,0 +1,1 @@
+export { PagePay } from './PagePay'
